@@ -14,27 +14,27 @@ const routes = [
   },
   {
     path: '/quokkaism',
-    name: 'Quokkaism',
+    name: 'quokkaism',
     component: Quokkaism
   },
   {
     path: '/contact',
-    name: 'Contact',
+    name: 'contact',
     component: Contact
   },
   {
     path: '/career',
-    name: 'Career',
+    name: 'career',
     component: Career
   },
   {
     path: '/animal',
-    name: 'Animal',
+    name: 'animal',
     component: Animal
   },
   {
     path: '/:pathMatch(.*)*',
-    name: 'PathNotFound',
+    name: 'pathNotFound',
     component: PathNotFound
   }
 ]
