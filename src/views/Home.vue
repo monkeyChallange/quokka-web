@@ -12,30 +12,33 @@
       <p>
         Technology are nothing but a tool for making the world a better place.
         We believe a sustainable future is built on curiosity, creativity and
-        big ideas. That’s why we started Quokka. Our teams cover ever-ything
-        from software to hardware and our services are built on a simple idea:
+        big ideas. That’s why we started Quokka. Our teams cover everything from
+        software to hardware and our services are built on a simple idea:
         <br />Together we can change the word!
       </p>
     </div>
   </div>
   <div class="page software-by-quokka">
-    <div class="text">
-      <h2>Software by Quokka</h2>
-      <p>
-        We offers high-end software engineering services to enterprises within
-        Automotive, Telecom, MedTech and Fintech. Our vast experience makes it
-        possible for us to set-up a dream team for your business! Our trademark
-        is creative software developers with strong programming skills. If you
-        are looking for deep and broad competence that can boost your business.
-        Or if you are looking for a new career with an employer that can give
-        you new challenges and unlock your full potential. Give us a call!
-      </p>
-    </div>
-    <div class="logo">
-      <h2>somethin</h2>
+    <div class="content">
+      <div class="text">
+        <h2>Software by Quokka</h2>
+        <p>
+          We offers high-end software engineering services to enterprises within
+          Automotive, Telecom, MedTech and Fintech. Our vast experience makes it
+          possible for us to set-up a dream team for your business! Our
+          trademark is creative software developers with strong programming
+          skills. If you are looking for deep and broad competence that can
+          boost your business. Or if you are looking for a new career with an
+          employer that can give you new challenges and unlock your full
+          potential. Give us a call!
+        </p>
+      </div>
+      <div class="logo">
+        <SoftwareByQuokkaLogo width="264.567" height="241.511" />
+      </div>
     </div>
   </div>
-  <div class="page quokka-hardware">
+  <div class="page left quokka-hardware">
     <div class="content">
       <h2>Quokka Hardware</h2>
       <p>
@@ -52,15 +55,37 @@
   <div class="page our-clients">
     <div class="content">
       <h2>Our Clients</h2>
-      <h3>Loggor</h3>
+      <ul v-for="client in clients.sort()" :key="client">
+        <li>
+          {{ client }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
+import SoftwareByQuokkaLogo from "@/components/logos/SoftwareByQuokkaLogo.vue"
+
 export default {
   name: "Home",
-  components: {},
+  components: { SoftwareByQuokkaLogo },
+  data() {
+    return {
+      clients: [
+        "Volvo Cars",
+        "Polestar",
+        "Volvo Trucks",
+        "Volvo Group Connected Solutions",
+        "Volvo Bus",
+        "CEVT",
+        "YARA Marine",
+        "Husqvarna",
+        "Ullman Dynamics",
+        "Faabcharge",
+      ],
+    }
+  },
 }
 </script>
 
@@ -75,8 +100,22 @@ export default {
   background-size: cover;
 }
 
+.page.left {
+  justify-content: left;
+}
+
+.page .content {
+  padding: 100px;
+  width: 50%;
+}
+
+.page.left .content {
+  text-align: left;
+  width: 50%;
+}
+
 .page.welcome-to {
-  background-image: url("~@/assets/backgrounds/home.jpg");
+  background-image: url("~@/assets/backgrounds/home.png");
 }
 .page.about-us {
   background-image: url("~@/assets/backgrounds/about-us.jpg");
@@ -102,34 +141,30 @@ export default {
   word-spacing: 5px;
 }
 
-.page.about-us .content {
-  width: 800px;
-}
-
-.page.software-by-quokka {
+.page.software-by-quokka .content {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .page.software-by-quokka .text {
   text-align: left;
-  padding-left: 100px;
-  width: 800px;
+  width: 50%;
 }
 .page.software-by-quokka .logo {
   text-align: left;
-  padding-right: 100px;
-}
-
-.page.quokka-hardware {
-  justify-content: left;
-}
-
-.page.quokka-hardware .content {
-  text-align: left;
-  padding-left: 100px;
-  width: 800px;
+  width: 25%;
 }
 
 .page.our-clients {
   align-items: baseline;
+}
+.page.our-clients .content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 28px;
+  line-height: 60px;
 }
 </style>

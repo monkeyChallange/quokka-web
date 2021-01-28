@@ -2,7 +2,7 @@
   <div class="page-header">
     <div class="logo">
       <a href="/" alt="Home">
-        <QuokkaLogo />
+        <QuokkaLogo width="250" height="50.870316" />
       </a>
     </div>
     <div class="nav">
@@ -17,15 +17,36 @@
     <router-view />
   </div>
   <div class="page-footer">
-    <p>© 2021<br />QUOKKA<br />ALL RIGHTS RESERVED</p>
+    <div class="content">
+      <span>© 2021<br />QUOKKA<br />ALL RIGHTS RESERVED</span>
+      <div class="links-container">
+        <a
+          href="https://www.instagram.com/softwarebyquokka/?hl=en"
+          target="_blank"
+        >
+          <span>INSTAGRAM</span>
+          <InstagramLogo width="16" height="16" />
+        </a>
+        <br />
+        <a
+          href="https://www.linkedin.com/company/software-by-quokka"
+          target="_blank"
+        >
+          <span>LINKEDIN</span>
+          <LinkedInLogo width="16" height="16" />
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import QuokkaLogo from "@/components/QuokkaLogo.vue"
+import QuokkaLogo from "@/components/logos/QuokkaLogo.vue"
+import LinkedInLogo from "@/components/logos/LinkedInLogo.vue"
+import InstagramLogo from "@/components/logos/InstagramLogo.vue"
 
 export default {
-  components: { QuokkaLogo },
+  components: { QuokkaLogo, LinkedInLogo, InstagramLogo },
 }
 </script>
 
@@ -38,29 +59,31 @@ export default {
   color: #062837;
 }
 #app h1,
-h2 {
+h2,
+h3 {
   color: #7cbb4a;
   letter-spacing: 2px;
   font-weight: normal;
 }
 #app h1 {
-  font-size: 64px;
+  font-size: 66px;
 }
 #app h2 {
-  font-size: 38px;
+  font-size: 36px;
 }
 
 #app h3 {
-  font-size: 28px;
-  color: white;
-  font-family: "Lexend Deca", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0px;
 }
 
-#app p {
+#app p,
+ul {
   color: white;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 40px;
   font-size: 24px;
 }
 
@@ -93,5 +116,38 @@ a.router-link-active.router-link-exact-active {
 .page-content {
   display: block;
   justify-content: center;
+}
+.page-content a {
+  color: inherit;
+  text-decoration: none;
+}
+.page-content a:visited {
+  text-decoration: none;
+}
+
+.page-footer {
+  margin: 50px 75px;
+}
+.page-footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.page-footer span {
+  text-align: left;
+  color: white;
+}
+.page-footer .links-container {
+  text-align: right;
+}
+.page-footer .links-container span {
+  margin-right: 5px;
+}
+.page-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.page-footer a:visited {
+  text-decoration: none;
 }
 </style>
