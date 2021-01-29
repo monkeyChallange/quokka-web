@@ -90,30 +90,6 @@ export default {
 </script>
 
 <style>
-.page {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.page.left {
-  justify-content: left;
-}
-
-.page .content {
-  padding: 100px;
-  width: 50%;
-}
-
-.page.left .content {
-  text-align: left;
-  width: 50%;
-}
-
 .page.welcome-to {
   background-image: url("~@/assets/backgrounds/home.png");
 }
