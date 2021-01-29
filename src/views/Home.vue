@@ -126,6 +126,9 @@ export default {
 .page.quokka-hardware {
   background-image: url("~@/assets/backgrounds/hardware.jpg");
 }
+.page.our-clients {
+  background-image: url("~@/assets/backgrounds/quokka-pattern-2.png");
+}
 
 .page.welcome-to .content {
   font-size: 62px;

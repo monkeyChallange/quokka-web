@@ -97,7 +97,9 @@
 .page.hi-there {
   background-image: url("~@/assets/backgrounds/code-challenge.jpg");
 }
-
+.page.join-us {
+  background-image: url("~@/assets/backgrounds/quokka-pattern-2.png");
+}
 .page.hiring {
   background-image: url("~@/assets/backgrounds/quokka-pattern.png");
 }
