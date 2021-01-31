@@ -8,6 +8,7 @@
     <div class="nav">
       <router-link to="/">Home</router-link>
       <router-link to="/quokkaism">Quokkaism</router-link>
+      <router-link to="/incubator">Incubator</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/career">Career</router-link>
       <router-link to="/animal">The Animal</router-link>

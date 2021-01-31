@@ -3,19 +3,15 @@
     <div class="content">
       <h2>Quokkaism</h2>
       <p>
-        Quokka started 2020. We, who started up the company, have vast
-        experience from some of Europes largest companies offering Engineering
-        Services. Everything starts with human beings. That is how we view the
-        world. An employee feeling secure in her or his profession, enjoying
-        life will feel encouraged to take decisions, be creative and utilize his
-        or her full potential. We also believe the speed of progress will
-        increase, when the common goal is superior, the position on the business
-        card.
-        <br />
-        <br />
-        This applies regardless, if we support our clients overcoming an
-        emergency situation or if we are trusted to take on an extensive project
-        with full delivery responsibility.
+        Quokka started 2021. We, who started the company, have been working
+        together for many years. We believe that successful projects are based
+        on the ability to bring out the best of people. An employee feeling
+        secure in her or his profession, enjoying life will feel encouraged to
+        take decisions, be creative and utilize his or her full potential. A
+        Quokka employee will increase the speed and quality of your project -
+        and introduce more creativity and happiness! This applies regardless, if
+        we support our clients overcoming an emergency, or if we are trusted to
+        take on an extensive project with full delivery responsibility.
       </p>
     </div>
   </div>

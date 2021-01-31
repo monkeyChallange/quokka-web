@@ -27,40 +27,34 @@
           href="https://futureskill.com/challenges/5e8a480c5b94905851b09c0f"
           target="_blank"
         >
-          Color Bot Code Challange
+          <button>
+            COLOR BOT CODE CHALLANGE
+          </button>
         </a>
       </h3>
     </div>
   </div>
-  <div class="page left join-us">
-    <div class="content">
+  <div class="page join-us">
+    <div class="headline">
       <h2>Want to Join Us?</h2>
       <p>
         We are always on the lookout for talented engineers! Right now we are
         looking for developers with experience in:
       </p>
-      <ul>
-        <li>Application development. Android/iOS</li>
-        <li>
-          DevOps. Development of infrastructure for CI/CD and frameworks for
-          testautomation
-        </li>
-        <li>
-          Cloud. Development of scalable server solutions, based on cloud
-          platforms like AWS, Google Cloud and Azure
-        </li>
-        <li>Embedded. Development of embedded systems</li>
-        <li>
-          Cyber Security. Risk analysis, education, operation, development of
-          security architecture
-        </li>
-        <li>
-          Data Science & Data Engineering. Development of algorithms and
-          pipelines for data management
-        </li>
-      </ul>
-      <h3>Contact Us</h3>
-      <p>We are curious to learn more about you!</p>
+    </div>
+    <div class="content">
+      <div class="software">
+        <h3>Software</h3>
+        <ul v-for="experiance in softwareExperiance" :key="experiance">
+          <li>{{ experiance }}</li>
+        </ul>
+      </div>
+      <div class="electronics-mechanics">
+        <h3>Electronics & Mechanics</h3>
+        <ul v-for="experiance in hardwareExperiance" :key="experiance">
+          <li>{{ experiance }}</li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="page left hiring">
@@ -70,8 +64,8 @@
         Working at Quokka is not only about challenges and technology. We
         believe in creating an environment where exciting challenges meets a
         strong cohesiveness and a secure enriching environment. Is Quokka the
-        next step for you? We are very curious to learn more about you! Här
-        hittar du våra platsannonser:
+        next step for you? We are very curious to learn more about you! Our job
+        posts:
         <br />
         <br />
         Software by Quokka:
@@ -89,6 +83,23 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      softwareExperiance: [
+        "Application development. Android/iOS",
+        "DevOps. Development of infrastructure for CI/CD and frameworks for testautomation",
+        "Cloud. Development of scalable server solutions, based on cloud platforms like AWS, Google Cloud and Azure",
+        "Embedded. Development of embedded systems",
+        "Cyber Security. Risk analysis, education, operation, development of security architecture",
+        "Data Science & Data Engineering. Development of algorithms and pipelines for data management",
+      ],
+      hardwareExperiance: ["foo", "bar"],
+    }
+  },
+}
+</script>
 <style>
 .page.change-the-world {
   background-image: url("~@/assets/backgrounds/career.jpg");
@@ -99,6 +110,7 @@
 }
 .page.join-us {
   background-image: url("~@/assets/backgrounds/quokka-pattern-2.png");
+  display: block;
 }
 .page.hiring {
   background-image: url("~@/assets/backgrounds/quokka-pattern.png");
@@ -110,5 +122,22 @@
 
 .page.join-us p {
   margin-top: 0px;
+}
+
+.page.join-us .content {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  line-height: 100%;
+}
+
+.page.join-us .content .software {
+  margin-right: 100px;
+  width: 50%;
+}
+.page.join-us .content .electronics-mechanics {
+  width: 50%;
 }
 </style>

@@ -6,8 +6,10 @@
         Quokkas are marsupials, native to Western Australia, and wear a
         perpetual “Hey there! Good to see ya! Oh, you brought pie! smile on
         their faces. The quokka is known for its curiosity and for being the
-        happiest animal on the planet. HAPPINESS and CURIOSITY - two great
-        keywords for Quokka and us working here.
+        happiest animal on the planet.
+        <span class="highlighted">HAPPINESS</span> and
+        <span class="highlighted">CURIOSITY</span> - two great keywords for
+        Quokka and us working here.
       </p>
     </div>
   </div>

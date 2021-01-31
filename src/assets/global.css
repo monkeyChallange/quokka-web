@@ -30,3 +30,19 @@ html {
   text-align: left;
   width: 50%;
 }
+
+.highlighted {
+  color: #7cbb4a;
+}
+
+.page button {
+  background-color: #7cbb4a;
+  color: white;
+  font-family: industry-inc-base;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
