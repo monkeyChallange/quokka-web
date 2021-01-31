@@ -1,6 +1,6 @@
 <template>
   <div class="page welcome-to">
-    <div class="content">
+    <div class="content animate__animated animate__fadeIn animate__slower">
       <span>Welcome to</span>
       <h1>Quokka</h1>
       <span class="sub-text">Joy. Curiosity. Innovation</span>
