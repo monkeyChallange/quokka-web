@@ -7,13 +7,13 @@
         perpetual “Hey there! Good to see ya! Oh, you brought pie! smile on
         their faces. The quokka is known for its curiosity and for being the
         happiest animal on the planet.
-        <span class="highlighted">HAPPINESS</span> and
-        <span class="highlighted">CURIOSITY</span> - two great keywords for
+        <span class="highlighted">Happiness</span> &
+        <span class="highlighted">Curiosity</span> - two great keywords for
         Quokka and us working here.
       </p>
     </div>
   </div>
-  <div class="page happy-animal">
+  <!-- <div class="page happy-animal">
     <div class="content">
       <h2>The Happiest Animal on the Planet</h2>
       <iframe
@@ -25,7 +25,7 @@
         allowfullscreen
       ></iframe>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <style>

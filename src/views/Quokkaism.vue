@@ -3,7 +3,7 @@
     <div class="content">
       <h2>Quokkaism</h2>
       <p>
-        Quokka started 2021. We, who started the company, have been working
+        Quokka started 2020. We, who started the company, have been working
         together for many years. We believe that successful projects are based
         on the ability to bring out the best of people. An employee feeling
         secure in her or his profession, enjoying life will feel encouraged to

@@ -35,22 +35,15 @@
     </div>
   </div>
   <div class="page join-us">
-    <div class="headline">
-      <h2>Want to Join Us?</h2>
-      <p>
-        We are always on the lookout for talented engineers! Right now we are
-        looking for developers with experience in:
-      </p>
-    </div>
     <div class="content">
       <div class="software">
-        <h3>Software</h3>
+        <h2>Software</h2>
         <ul v-for="experiance in softwareExperiance" :key="experiance">
           <li>{{ experiance }}</li>
         </ul>
       </div>
       <div class="electronics-mechanics">
-        <h3>Electronics & Mechanics</h3>
+        <h2>Electronics & Mechanics</h2>
         <ul v-for="experiance in hardwareExperiance" :key="experiance">
           <li>{{ experiance }}</li>
         </ul>
@@ -68,15 +61,9 @@
         posts:
         <br />
         <br />
-        Software by Quokka:
-        <a href="www.linkedin.com/softwarebyquokka" target="_blank">
-          www.linkedin.com/softwarebyquokka
-        </a>
-        <br />
-        <br />
-        Quokka Hardware and electronic:
-        <a href="http://www.linkedin.com/quokka" target="_blank">
-          http://www.linkedin.com/quokka
+        Welcome to send your application to:
+        <a href="mailto:rekrytering@quokka.se" target="_blank">
+          rekrytering@quokka.se
         </a>
       </p>
     </div>
@@ -95,7 +82,13 @@ export default {
         "Cyber Security. Risk analysis, education, operation, development of security architecture",
         "Data Science & Data Engineering. Development of algorithms and pipelines for data management",
       ],
-      hardwareExperiance: ["foo", "bar"],
+      hardwareExperiance: [
+        "Mechatronic development and system verification",
+        "Electrical wiring distribution systems, Creo, Catia or Saber ESD",
+        "Senior but most importantly innovative mechanical engineers. CREO or Catia v5/v6",
+        "Charging system technologies for electromobility",
+        "Battery management electronics and embedded software",
+      ],
     }
   },
 }
@@ -110,10 +103,9 @@ export default {
 }
 .page.join-us {
   background-image: url("~@/assets/backgrounds/quokka-pattern-2.png");
-  display: block;
 }
 .page.hiring {
-  background-image: url("~@/assets/backgrounds/quokka-pattern.png");
+  background-image: url("~@/assets/backgrounds/hiring.jpg");
 }
 
 .page.hiring a {
@@ -126,9 +118,9 @@ export default {
 
 .page.join-us .content {
   display: flex;
-  text-align: left;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: baseline;
+  text-align: left;
   width: 100%;
   line-height: 100%;
 }

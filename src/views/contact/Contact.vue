@@ -19,39 +19,29 @@
   </div>
   <div class="page contact">
     <div class="content">
-      <SingleContact
-        name="Teresia Von Sicard"
-        position="CEO Software by Quokka"
-        phone="+46760029001"
-        email="teresia.sicard@quokka.se"
-      />
-      <SingleContact
-        name="Henrik Nesser"
-        position="CEO Quokka AB"
-        phone="+XXXXXXXXXX"
-        email="henrik.nesser@quokka.se"
-      />
-      <SingleContact
-        name="Johannes"
-        position="Business Unit Manager"
-        phone="+XXXXXXXXXX"
-        email="johannes.xxxxxx@quokka.se"
-      />
-      <SingleContact
-        name="Fehmi"
-        position="Business Unit Manager"
-        phone="+XXXXXXXXXX"
-        email="fehmi.xxxxxx@quokka.se"
-      />
+      <div>
+        <SingleContact v-bind="contacts[0]" />
+        <SingleContact v-bind="contacts[1]" />
+      </div>
+      <div>
+        <SingleContact v-bind="contacts[2]" />
+        <SingleContact v-bind="contacts[3]" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import SingleContact from "@/components/SingleContact.vue"
+import contacts from "./contacts"
 
 export default {
   components: { SingleContact },
+  data() {
+    return {
+      contacts: contacts,
+    }
+  },
 }
 </script>
 
@@ -61,7 +51,9 @@ export default {
 }
 
 .page.contact .content {
-  display: block;
-  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 </style>

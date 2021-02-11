@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="contact-image">
-      <PictureFrame width="200" height="179.5688" />
+      <img :src="img()" contain width="300" height="273" />
     </div>
     <div class="contact-details">
       <h3>{{ name }}</h3>
@@ -21,7 +21,7 @@ import PictureFrame from "@/components/PictureFrame.vue"
 
 export default {
   components: { PictureFrame },
-  props: ["name", "position", "phone", "email"],
+  props: ["name", "position", "phone", "email", "img"],
 }
 </script>
 
@@ -29,10 +29,10 @@ export default {
 .container {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .contact-details {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 .contact-details h3 {
   text-align: left;

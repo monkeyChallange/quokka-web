@@ -5,6 +5,39 @@ html {
   width: 100%;
   min-height: 100%;
   background: #062837;
+  font-family: industry-inc-base, "Lexend Deca", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #062837;
+}
+
+h1,
+h2,
+h3 {
+  color: #7cbb4a;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+h1 {
+  font-size: 66px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+p,
+ul {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  line-height: 40px;
+  font-size: 24px;
 }
 
 .page {
@@ -24,11 +57,11 @@ html {
 .page .content {
   padding: 100px;
   width: 50%;
+  text-align: justify;
 }
 
 .page.left .content {
   text-align: left;
-  width: 50%;
 }
 
 .highlighted {
@@ -38,11 +71,16 @@ html {
 .page button {
   background-color: #7cbb4a;
   color: white;
-  font-family: industry-inc-base;
   font-size: 16px;
+  font-weight: bold;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 5px;
+}
+
+.page button:hover {
+  background-color: white;
+  color: #7cbb4a;
 }

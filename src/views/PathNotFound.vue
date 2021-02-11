@@ -1,5 +1,10 @@
 <template>
-  <h3>PathNotFound</h3>
+  <div class="page not-found">
+    <div class="content">
+      <h3>Sidan finns inte</h3>
+      <p>Sidan som du försökte navigera existerar tyvärr inte!</p>
+    </div>
+  </div>
 </template>
 
 <script>
