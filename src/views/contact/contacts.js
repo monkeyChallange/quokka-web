@@ -18,14 +18,14 @@ export default [
     {
         name:"Johannes Troedsson",
         position:"Business Unit Manager",
-        phone:"+46 (0)76-002 9 002",
+        phone:"+46 (0)76-002 8 002",
         email:"johannes.troedsson@quokka.se",
         img: getContactUrl('johannes')
     },
     {
-        name:"Fehmi",
+        name:"Fehmi Fetiu",
         position:"Business Unit Manager",
-        phone:"+46 (0)76-002 9 004",
+        phone:"+46 (0)76-002 8 004",
         email:"fehmi.fetiu@quokka.se",
         img: getContactUrl('fehmi')
     }

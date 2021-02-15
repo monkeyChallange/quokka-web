@@ -50,6 +50,10 @@ export default {
   background-image: url("~@/assets/backgrounds/contact.jpg");
 }
 
+.page.contact {
+  background-image: url("~@/assets/backgrounds/quokka-pattern-2.png");
+}
+
 .page.contact .content {
   display: flex;
   justify-content: space-evenly;

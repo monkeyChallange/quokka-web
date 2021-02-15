@@ -91,6 +91,7 @@ export default {
 .page.quokka .content {
   display: flex;
   justify-content: space-evenly;
+  align-items: baseline;
   width: 100%;
 }
 

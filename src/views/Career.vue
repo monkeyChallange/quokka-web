@@ -36,6 +36,13 @@
   </div>
   <div class="page join-us">
     <div class="content">
+      <div class="header">
+        <h2>Want to join us?</h2>
+        <p>
+          We are always on the lookout for talented engineers! Right now we are
+          looking for developers with experience in:
+        </p>
+      </div>
       <div class="software">
         <h2>Software</h2>
         <ul v-for="experiance in softwareExperiance" :key="experiance">
@@ -118,18 +125,23 @@ export default {
 
 .page.join-us .content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: baseline;
   text-align: left;
   width: 100%;
-  line-height: 100%;
 }
 
 .page.join-us .content .software {
-  margin-right: 100px;
-  width: 50%;
+  width: 40%;
+  padding-right: 50px;
 }
+
 .page.join-us .content .electronics-mechanics {
-  width: 50%;
+  width: 40%;
+}
+
+.page.page.join-us .content .header {
+  width: 20%;
+  padding-right: 50px;
 }
 </style>

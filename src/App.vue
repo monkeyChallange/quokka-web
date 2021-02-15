@@ -48,46 +48,15 @@ import InstagramLogo from "@/components/logos/InstagramLogo.vue"
 
 export default {
   components: { QuokkaLogo, LinkedInLogo, InstagramLogo },
+  // data() {
+  //   return {
+  //     menuSticky: () => (window.pageYOffset > 50 ? "sticky" : null),
+  //   }
+  // },
 }
 </script>
 
 <style>
-#app {
-  font-family: industry-inc-base, "Lexend Deca", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #062837;
-}
-#app h1,
-h2,
-h3 {
-  color: #7cbb4a;
-  letter-spacing: 2px;
-  font-weight: normal;
-}
-#app h1 {
-  font-size: 66px;
-}
-#app h2 {
-  font-size: 36px;
-}
-
-#app h3 {
-  font-size: 26px;
-  font-weight: 500;
-  margin: 0px;
-}
-
-#app p,
-ul {
-  color: white;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 300;
-  line-height: 40px;
-  font-size: 24px;
-}
-
 .page-header {
   position: absolute;
   top: 0;
@@ -110,6 +79,12 @@ ul {
 .page-header .nav a:hover {
   color: #7cbb4a;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
 a.router-link-active.router-link-exact-active {
   color: #7cbb4a;
 }
